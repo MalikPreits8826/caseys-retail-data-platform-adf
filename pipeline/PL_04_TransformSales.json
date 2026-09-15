@@ -1,0 +1,30 @@
+{
+	"name": "PL_04_TransformSales",
+	"properties": {
+		"activities": [
+			{
+				"name": "TransformSales",
+				"type": "SqlServerStoredProcedure",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"storedProcedureName": "[dbo].[sp_TransformSales]"
+				},
+				"linkedServiceName": {
+					"referenceName": "LS_AzureSQLDB",
+					"type": "LinkedServiceReference"
+				}
+			}
+		],
+		"annotations": [],
+		"lastPublishTime": "2026-09-15T15:03:55Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

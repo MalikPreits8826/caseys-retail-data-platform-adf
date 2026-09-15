@@ -1,0 +1,15 @@
+{
+	"name": "preeticasey001-ADF",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Disabled",
+			"editable": true
+		}
+	},
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "1dbb7016-e419-4dde-b24c-b01175ac63af",
+		"tenantId": "283ceef7-cdc1-40d9-9b27-638e57028361"
+	}
+}

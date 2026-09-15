@@ -1,0 +1,27 @@
+{
+	"name": "trigger1",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "PL_00_Master",
+					"type": "PipelineReference"
+				},
+				"parameters": {
+					"FileName": "Sales_202606233333"
+				}
+			}
+		],
+		"type": "BlobEventsTrigger",
+		"typeProperties": {
+			"blobPathBeginsWith": "/casey-retail-project/blobs/",
+			"ignoreEmptyBlobs": true,
+			"scope": "/subscriptions/514fad77-9878-49e5-9182-d8343c54aacc/resourceGroups/pr-interview-prep/providers/Microsoft.Storage/storageAccounts/preetistorage001",
+			"events": [
+				"Microsoft.Storage.BlobCreated"
+			]
+		}
+	}
+}

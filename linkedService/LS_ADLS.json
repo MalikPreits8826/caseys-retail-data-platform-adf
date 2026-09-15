@@ -1,0 +1,22 @@
+{
+	"name": "LS_ADLS",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureBlobFS",
+		"typeProperties": {
+			"url": "https://preetistorage001.dfs.core.windows.net",
+			"tenant": "283ceef7-cdc1-40d9-9b27-638e57028361",
+			"servicePrincipalId": "01661734-dc15-4cbd-9d38-184eb1a76b1a",
+			"servicePrincipalCredentialType": "ServicePrincipalKey",
+			"servicePrincipalCredential": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "LS_KeyVault",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "sp-client-secret"
+			}
+		}
+	}
+}
